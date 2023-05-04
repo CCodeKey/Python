@@ -1,5 +1,5 @@
 import socket
-HOST = '10.15.2.237'
+HOST = '10.15.2.98'
 PORT = 12345
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 server_socket.bind((HOST, PORT))
