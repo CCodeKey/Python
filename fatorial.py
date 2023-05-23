@@ -52,17 +52,16 @@ while True:
     print()
     print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     print()
-    resultado(num_anagramas , num_repeticoes)
-    print()
     print("- Letras Repetidas :")
-    num = 0
+    num = 1
     for letra, quantidade in repeticoes.items():
-        print(f"     {letra}: {quantidade}") # or
-        # print(factorial(quantidade))
-        # som = factorial(quantidade) 
+        print(f"     {letra}: {quantidade} ou {factorial(quantidade)}!")
+        num = num * factorial(quantidade)  
+        print("num -> ", num)
     print()
     print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     print()
+    resultado(num_anagramas , num)
     print()
     print()
     print()
